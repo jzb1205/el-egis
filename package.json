@@ -1,14 +1,21 @@
 {
-  "name": "my-project",
-  "version": "0.1.0",
-  "private": true,
+  "name": "el-egis",
+  "version": "0.1.6",
+  "description": "基于element-ui二次封装",
+  "main": "lib/vcolorpicker.umd.min.js",
+  "keyword": "vcolorpicker colorpicker color-picker",
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name vcolorpicker --dest lib packages/index.js"
   },
   "dependencies": {
     "core-js": "^2.6.5",
+    "element-ui": "^2.12.0",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
     "vue": "^2.6.10"
   },
   "devDependencies": {
