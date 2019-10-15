@@ -5,9 +5,9 @@ import 'element-ui/lib/theme-chalk/index.css'
 // 注册
 Vue.use(ElementUI)
 // 导入组件库
-import comDialog from './../packages/index'
+import elEgis from './../packages/index'
 // 注册组件库
-Vue.use(comDialog)
+Vue.use(elEgis)
 
 Vue.config.productionTip = false
 
