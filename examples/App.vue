@@ -1,7 +1,9 @@
 <template>
   <div id="app">
-    <com-dialog></com-dialog>
-    <egis-table
+    
+    <el-button type="text" @click="dialogVisible = !dialogVisible">点击打开 Dialog</el-button>
+    <egis-dialog  v-el-drag-dialog :dialogVisible='dialogVisible' @handleClose='handleClose'></egis-dialog>
+    <!-- <egis-table
       :tableData="tableData"
       :headerData="headerData"
       :curDisColumn="curDisColumn"
@@ -15,16 +17,21 @@
       <div slot-scope="props">
         <el-button type="primary" size="mini" @click="getData(props)">详细</el-button>
       </div>
-    </egis-table>
+    </egis-table> -->
   </div>
 </template>
 
 <script>
+import elDragDialog from './../directive/el-drag-dialog'
 export default {
   name: "app",
   components: {},
+  directives: {
+    elDragDialog
+  },
   data() {
     return {
+      dialogVisible:false,
       /**
        * 二次封装表格参数
        */
@@ -201,7 +208,15 @@ export default {
     //通过表格按钮操作获取数据
     getData(props) {
       console.log(props);
-    }
+    },
+    
+      handleClose(done) {
+        this.$confirm('确认关闭？')
+          .then(() => {
+            done();
+          })
+          .catch(() => {});
+      }
   }
 };
 </script>
@@ -214,5 +229,6 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  position: relative;
 }
 </style>
