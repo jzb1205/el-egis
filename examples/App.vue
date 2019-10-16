@@ -10,6 +10,9 @@
       <el-tab-pane label="分页">
         <egis-pagination-example></egis-pagination-example>
       </el-tab-pane> 
+      <el-tab-pane label="tinymce">
+        <egis-tinymce-example></egis-tinymce-example>
+      </el-tab-pane> 
     </el-tabs>
   </div>
 </template>
@@ -18,12 +21,14 @@
 import egisTableExample from './components/egis-table'
 import egisDialogExample from './components/egis-dialog'
 import egisPaginationExample from './components/egis-pagination'
+import egisTinymceExample from './components/tinymce/tinymce'
 export default {
   name: "app",
   components:{
     egisTableExample,
     egisDialogExample,
-    egisPaginationExample
+    egisPaginationExample,
+    egisTinymceExample
   },
   data() {
     return {
