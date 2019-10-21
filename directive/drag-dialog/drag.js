@@ -2,7 +2,6 @@ export default {
   bind(el, binding, vnode) {
     const dialogHeaderEl = el.querySelector('.el-dialog__header')
     const dragDom = el.querySelector('.el-dialog')
-    const wraper = el.querySelector('.el-dialog__wrapper')
     dialogHeaderEl.style.cssText += ';cursor:move;'
     dragDom.style.cssText += ';top:0px;'
 
@@ -24,7 +23,7 @@ export default {
       const dragDomHeight = dragDom.offsetHeight
 
       const screenWidth = document.body.clientWidth
-      const screenHeight = wraper.offsetHeight
+      const screenHeight = document.body.clientHeight
 
       const minDragDomLeft = dragDom.offsetLeft
       const maxDragDomLeft = screenWidth - dragDom.offsetLeft - dragDomWidth
@@ -37,7 +36,7 @@ export default {
       let styT = getStyle(dragDom, 'top')
       if (styL.includes('%')) {
         styL = +document.body.clientWidth * (+styL.replace(/\%/g, '') / 100)
-        styT = +wraper.offsetHeight * (+styT.replace(/\%/g, '') / 100)
+        styT = +document.body.clientHeight * (+styT.replace(/\%/g, '') / 100)
       } else {
         styL = +styL.replace(/\px/g, '')
         styT = +styT.replace(/\px/g, '')
