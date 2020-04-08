@@ -61,8 +61,8 @@ export default {
 </script>
 
 <style lang='less' scoped>
-.egis-pagination {
-  text-align: center;
-  padding: 15px;
-}
+// .egis-pagination {
+//   text-align: center;
+//   padding: 15px;
+// }
 </style>

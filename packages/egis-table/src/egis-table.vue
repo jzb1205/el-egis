@@ -147,38 +147,38 @@ export default {
 </script>
 
 <style lang='less' scoped>
-/deep/.el-button--mini, .el-button--mini.is-round{
-  padding:2px 4px!important;
-}
-/deep/.el-input__inner{
-  text-align: center;
-}
-/deep/.el-date-editor.el-input, .el-date-editor.el-input__inner{
-  width:220px;
-}
-/deep/.el-input__inner{
-  line-height:30px;
-  height:30px;
-}
-/deep/.el-input__icon{
-  line-height:30px;
-}
-/deep/.el-input--prefix .el-input__inner{
-  margin-left: 0;
-}
-/deep/.el-input--suffix .el-input__inner{
-  margin-right: 0;
-}
-/deep/.el-table .cell.el-tooltip{
-  width:200px;
-}
-/deep/.el-date-editor.el-input, .el-date-editor.el-input__inner{
-  width:185px;
-}
-/deep/.el-radio{
-  margin-right:5px;
-}
-/deep/.el-radio__label{
-  padding-left:5px;
-}
+// /deep/.el-button--mini, .el-button--mini.is-round{
+//   padding:2px 4px!important;
+// }
+// /deep/.el-input__inner{
+//   text-align: center;
+// }
+// /deep/.el-date-editor.el-input, .el-date-editor.el-input__inner{
+//   width:220px;
+// }
+// /deep/.el-input__inner{
+//   line-height:30px;
+//   height:30px;
+// }
+// /deep/.el-input__icon{
+//   line-height:30px;
+// }
+// /deep/.el-input--prefix .el-input__inner{
+//   margin-left: 0;
+// }
+// /deep/.el-input--suffix .el-input__inner{
+//   margin-right: 0;
+// }
+// /deep/.el-table .cell.el-tooltip{
+//   width:200px;
+// }
+// /deep/.el-date-editor.el-input, .el-date-editor.el-input__inner{
+//   width:185px;
+// }
+// /deep/.el-radio{
+//   margin-right:5px;
+// }
+// /deep/.el-radio__label{
+//   padding-left:5px;
+// }
 </style>
